@@ -37,6 +37,14 @@ module Verilog
       return result[0]
     end
 
+    def includes_file( name )
+        @files.select { |file| file.includes.include?( name ) }
+    end
+
+    def instantiates_module( name )
+        @files.select { |file| file.instantiations.include?( name ) }
+    end
+
   end
 
 end

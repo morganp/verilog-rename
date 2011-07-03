@@ -2,12 +2,12 @@
 NAME="verilog-rename"
 
 Dir.chdir( './lib/')
-puts require NAME
+puts require 'verilog_rename'
 Dir.chdir( './../')
 
 spec = Gem::Specification.new do |s|
    s.name         = NAME
-   s.version      = Verilog::VERSION
+   s.version      = VerilogRename::VERSION
    s.platform     = Gem::Platform::RUBY
    s.summary      = 'Extension to the verilog gem for renaming verilog files'
    s.homepage     = "http://amaras-tech.co.uk/software/#{NAME}"
@@ -18,8 +18,11 @@ spec = Gem::Specification.new do |s|
    s.files        += Dir.glob("README.md")
    s.files        += Dir.glob("HISTORY.md")
    s.files        += Dir.glob("Rakefile")
+   s.files        += Dir.glob("bin/**/*")
    s.files        += Dir.glob("lib/**/*")
    s.files        += Dir.glob("spec/**/*")
+   s.add_dependency('verilog', '>= 0.0.2')
+   
    s.has_rdoc     = false
 
 end
