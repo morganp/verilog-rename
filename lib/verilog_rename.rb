@@ -6,3 +6,5 @@ end
 require 'verilog'
 
 require 'verilog/rename'
+require 'verilog/prefix'
+require 'verilog/path_files'
