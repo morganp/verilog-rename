@@ -16,15 +16,6 @@ describe VerilogRename do
     ## Copy files from fixtures to scratch
     FileUtils.cp_r( ::File.join( path, 'fixtures'), ::File.join( path, 'scratch' ) )
 
-    #test_one = Verilog::File.new("test_one.v", {:path => File.join( path, 'fixtures') })
-    #test_one.read_from_disk
-
-    #test_three = Verilog::File.new("test_one.v", {:path => File.join( path, 'fixtures') })
-    #test_three.read_from_disk
-    
-    #test_four = Verilog::File.new("test_one.v", {:path => File.join( path, 'fixtures') })
-    #test_four.read_from_disk
-
 
     path_files = Verilog::PathFiles.new( File.join( path, 'scratch', 'fixtures') )
     path_files.read_all
