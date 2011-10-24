@@ -1,9 +1,7 @@
 
-NAME="verilog-rename"
+NAME="verilog_rename"
 
-Dir.chdir( './lib/')
-puts require 'verilog_rename'
-Dir.chdir( './../')
+require File.join( File.dirname(__FILE__), 'lib', NAME )
 
 spec = Gem::Specification.new do |s|
    s.name         = NAME
