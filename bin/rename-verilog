@@ -14,8 +14,8 @@ old_name = ARGV[0]
 new_name = ARGV[1]
 
 
-path_files = Verilog::PathFiles.new( this_dir )
-  path_files.read_all
+path_files = Verilog::Path.new( this_dir )
+path_files.read_all
 
 rename = Verilog::Rename.new(old_name, new_name, path_files)
   rename.rename_module

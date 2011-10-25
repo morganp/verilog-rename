@@ -17,7 +17,7 @@ describe VerilogRename do
     FileUtils.cp_r( ::File.join( path, 'fixtures'), ::File.join( path, 'scratch' ) )
 
 
-    path_files = Verilog::PathFiles.new( File.join( path, 'scratch', 'fixtures') )
+    path_files = Verilog::Path.new( File.join( path, 'scratch', 'fixtures') )
     path_files.read_all
 
     rename = Verilog::Rename.new('TEST_ONE', 'TEST_TWO', path_files)

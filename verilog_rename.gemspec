@@ -19,7 +19,7 @@ spec = Gem::Specification.new do |s|
    s.files        += Dir.glob("bin/**/*")
    s.files        += Dir.glob("lib/**/*")
    s.files        += Dir.glob("spec/**/*")
-   s.add_dependency('verilog', '>= 0.0.2')
+   s.add_dependency('verilog', '>= 0.0.4')
    
    s.has_rdoc     = false
 
