@@ -18,4 +18,4 @@ path_files = Verilog::Path.new( this_dir )
 path_files.read_all
 
 rename = Verilog::Rename.new(old_name, new_name, path_files)
-  rename.rename_module
+rename.rename_module
