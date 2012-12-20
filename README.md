@@ -3,6 +3,14 @@ verilog_rename
 
 Helpers to rename a verilog module and update refferences to it
 
+Install
+--
+
+    $ gem install verilog_rename
+
+Usage
+--
+
 Example (from the rename-verilog executable)
 
     require 'rubygems'
