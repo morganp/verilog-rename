@@ -3,6 +3,14 @@ verilog_rename
 
 Helpers to rename a verilog module and update refferences to it
 
+Install
+--
+
+    $ gem install verilog_rename
+
+Usage
+--
+
 Example (from the rename-verilog executable)
 
     require 'rubygems'
@@ -10,7 +18,7 @@ Example (from the rename-verilog executable)
 
     this_dir = Dir.pwd
      
-    path_files = Verilog::PathFiles.new( this_dir )
+    path_files = Verilog::Path.new( this_dir )
     path_files.read_all
 
     rename = Verilog::Rename.new('OLD_NAME', 'NEW_NAME', path_files)
